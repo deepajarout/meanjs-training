@@ -16,16 +16,17 @@ Hi! Welcome to the MEAN Stack course from ThruSkills.com. This is the training r
  - Angular JS
 
 ## DVCS & Git
-About Version Control
-Git Basics
-Git Branching
-GitHub
+
+ - About Version Control
+ - Git Basics
+ - Git Branching
+ - GitHub
 
 ## JavaScript
 
-Fundamentals Of JavaScript
-JavaScript Building Blocks
-Objects Oriented JavaScript
-Client-side Web APIs
-Fundamentals Of jQuery
-JavaScript Mini Project
+ - Fundamentals Of JavaScript
+ - JavaScript Building Blocks
+ - Objects Oriented JavaScript
+ - Client-side Web APIs
+ - Fundamentals Of jQuery
+ - JavaScript Mini Project
