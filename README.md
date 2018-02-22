@@ -26,7 +26,7 @@ Hi! Welcome to the MEAN Stack course from ThruSkills.com. This is the training r
 
  - Fundamentals Of JavaScript
  - JavaScript Building Blocks
- - Objects Oriented JavaScript
- - Client-side Web APIs
+ - Object Oriented JavaScript
+ - Client-side APIs
  - Fundamentals Of jQuery
  - JavaScript Mini Project
