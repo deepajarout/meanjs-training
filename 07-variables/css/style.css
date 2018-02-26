@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+    background-color: #0C323D;
+    color: #809089;
+    font-family: monospace;
+  }
+
+  body {
+    max-width: 700px;
+  }
+
+  p {
+    margin: 0;
+    width: 1%;
+    padding: 0 1%;
+    font-size: 16px;
+    line-height: 1.5;
+    float: left;
+  }
+
+  .input p {
+    margin-right: 1%;
+  }
+
+  .output p {
+    width: 100%;
+  }
+
+  .input input {
+    width: 96%;
+    float: left;
+    border: none;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: monospace;
+    padding: 0;
+    background: #0C323D;
+    color: #809089;
+  }
+
+  div {
+    clear: both;
+  }

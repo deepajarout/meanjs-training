@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h2 id="Steps_to_complete">Steps to complete</h2>
+  <p>The following sections describe what you need to do.</p>
+  <p>Basic setup:</p>
+  <ol>
+    <li>Create a new file called <code>js/main.js</code>, in the same directory as your <code>index.html</code> file.</li>
+    <li>Apply the external JavaScript file to your HTML by inserting a script element into your HTML referencing <code>js/main.js</code>. Put it just before the closing tag.</li>
+  </ol>
+  
+  <p>Initial variables and functions:</p>
+    
+    <ol>
+      <li>In the raw text file, copy all of the code underneath the heading 
+      "1. COMPLETE VARIABLE AND FUNCTION DEFINITIONS" and paste it into the 
+      top of the <code>main.js</code> file. This gives you three variables that store references to the "Enter custom name" text field (<code>customName</code>), the&nbsp;"Generate random story" button (<code>randomize</code>), and the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" title="The HTML <p> element represents a paragraph of text."><code>&lt;p&gt;</code></a> element at the bottom of the HTML body that the story will be copied into (<code>story</code>), respectively. In addition you've got a function called&nbsp;<code>randomValueFromArray()</code> that takes an array, and returns one of the items stored inside the array at random.</li><li>Now look at the second section of the raw text file — "2. RAW TEXT 
+      STRINGS". This contains text strings that will act as input into our 
+      program. We'd like you to contain these inside variables inside <code>main.js</code>:
+      <ol>
+        <li>Store the first, big long, string of text inside a variable called <code>storyText</code>.</li>
+        <li>Store the first set of three strings inside an array called <code>insertX</code>.</li>
+        <li>Store the second set of three strings inside an array called <code>insertY</code>.</li>
+        <li>Store the third set of three strings inside an array called <code>insertZ</code>.</li>
+      </ol>
+     </li>
+    </ol>
+    
+    <p>Placing the event handler and incomplete function:</p>
+    
+    <ol>
+      <li>Now return to the raw text file.</li>
+      <li>Copy the code found underneath the heading "3. EVENT LISTENER AND 
+        PARTIAL FUNCTION DEFINITION" and paste it into the bottom of your <code>main.js</code> file. This:
+        <ul>
+          <li>Adds a click event listener to the <code>randomize</code> variable so that when the button it represents is clicked, the <code>result()</code> function is run.</li>
+          <li>Adds a partially-completed <code>result()</code> function 
+            definiton to your code. For the remainder of the assessment, you'll be 
+            filling in lines inside this function to complete it and make it work 
+            properly.
+          </li>
+        </ul>
+      </li>
+    </ol>
+    
+    <p>Completing the <code>result()</code> function:</p>
+    <ol>
+      <li>Create a new variable called <code>newStory</code>, and set it's value to equal <code>storyText</code>.
+     This is needed so we can create a new random story each time the button
+     is pressed and the function is run. If we made changes directly to <code>storyText</code>, we'd only be able to generate a new story once.</li>
+     
+     <li>Create three new variables called <code>xItem</code>, <code>yItem</code>, and <code>zItem</code>, and make them equal to the result of calling <code>randomValueFromArray()</code>
+     on your three arrays (the result in each case will be a random item out
+     of each array it is called on). For example you can call the function 
+    and get it to return one random string out of <code>insertX</code> by writing <code>randomValueFromArray(insertX)</code>.</li>
+    
+    <li>Next we want to replace the three placeholders in the <code>newStory</code> string — <code>:insertx:</code>, <code>:inserty:</code>, and <code>:insertz:</code> — with the strings stored in <code>xItem</code>, <code>yItem</code>, and <code>zItem</code>. There is a particular string method that will help you here — in each case, make the call to the method equal to <code>newStory</code>, so each time it is called, <code>newStory</code>
+     is made equal to itself, but with substitutions made. So each time the 
+    button is pressed, these placeholders are each replaced with a random 
+    silly string. As a further hint, the method in question only replaces 
+    the first instance of the substring it finds, so you might need to make 
+    one of the calls twice.</li>
+    
+    <li>Inside the first <code>if</code> block, add another string replacement method call to replace the name 'Bob' found in the <code>newStory</code> string with the <code>name</code> variable. In this block we are saying "If a value has been entered into the <code>customName</code> text input, replace Bob in the story with that custom name."</li><li>Inside the second <code>if</code> block, we are checking to see if the <code>uk</code>
+     radio button has been selected. If so, we want to convert the weight 
+    and temperature values in the story from pounds and Fahrenheit into 
+    stones and centigrade. What you need to do is as follows:
+      <ol>
+        <li>Look up the formulae for converting pounds to stone, and Fahrenheit to centigrade.</li><li>Inside the line that defines the <code>weight</code> variable, replace 300 with a calculation that converts 300 pounds into stones. Concatenate <code>' stone'</code> onto the end of the result of the overall <code>Math.round()</code> call.</li><li>Inside the line that defines the <code>temperature</code> variable, replace 94 with a calculation that converts 94 Fahrenheit into centigrade. Concatenate <code>' centigrade'</code> onto the end of the result of the overall <code>Math.round()</code> call.</li>
+        <li>Just under the two variable definitions, add two more string 
+        replacement lines that replace&nbsp;'94 farenheit' with the contents of the <code>temperature</code> variable, and '300 pounds' with the contents of the <code>weight</code> variable.</li>
+      </ol>
+    </li>
+    <li>Finally, in the second-to-last line of the function, make the <code>textContent</code> property of the <code>story</code> variable (which references the paragraph) equal to <code>newStory</code>.</li>
+  </ol>
+
+</body>
+</html>

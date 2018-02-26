@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Top 5 Searches</title>
+</head>
+
+<body>
+
+    <h2>Live output</h2>
+    <div class="output" style="min-height: 150px;">
+
+        <input type="text">
+        <button>Search</button>
+
+        <ul>
+            <li>mani</li>
+            <li>saasd</li>
+            <li>aadasd</li>
+        </ul>
+    </div>
+
+    <textarea id="code" class="playable-code" style="height: 370px; width: 95%">var list = document.querySelector('.output ul');
+        var searchInput = document.querySelector('.output input');
+        var searchBtn = document.querySelector('.output button');
+        
+        list.innerHTML = '';
+        
+        var myHistory = [];
+        
+        searchBtn.onclick = function() {
+            // we will only allow a term to be entered if the search input isn't empty
+            if (searchInput.value !== '') {
+            // number 1
+        
+            // empty the list so that we don't display duplicate entries
+            // the display is regenerated every time a search term is entered.
+            list.innerHTML = '';
+        
+            // loop through the array, and display all the search terms in the list
+            for (var i = 0; i &lt; myHistory.length; i++) {
+                itemText = myHistory[i];
+                var listItem = document.createElement('li');
+                listItem.textContent = itemText;
+                list.appendChild(listItem);
+            }
+        
+            // If the array length is 5 or more, remove the oldest search term
+            if (myHistory.length &gt;= 5) {
+                // number 2
+        
+            }
+        
+            // empty the search input and focus it, ready for the next term to be entered
+            searchInput.value = '';
+            searchInput.focus();
+            }
+        }
+    </textarea>
+    <div class="playable-buttons">
+        <input id="reset" value="Reset" type="button">
+        <input id="solution" value="Show solution" type="button">
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

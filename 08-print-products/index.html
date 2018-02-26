@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Printing those products</title>
+</head>
+
+<body>
+    <h2>Live output</h2>
+    <div class="output" style="min-height: 150px;">
+        <ul>
+            <li>Underpants — $6.99</li>
+            <li>Socks — $5.99</li>
+            <li>T-shirt — $14.99</li>
+            <li>Trousers — $31.99</li>
+            <li>Shoes — $23.99</li>
+        </ul>
+        <p>Total: $83.95</p>
+    </div>
+    <h2>Editable code</h2>
+    <p class="a11y-label">Press Esc to move focus away from the code area (Tab inserts a tab character).</p>
+
+    <textarea id="code" class="playable-code" style="height: 410px;width: 95%">
+        var list = document.querySelector('.output ul');
+        var totalBox = document.querySelector('.output p');
+        var total = 0;
+        list.innerHTML = '';
+        totalBox.textContent = '';
+        // number 1
+                        'Underpants:6.99'
+                        'Socks:5.99'
+                        'T-shirt:14.99'
+                        'Trousers:31.99'
+                        'Shoes:23.99';
+
+        for (var i = 0; i &lt;= 0; i++) { // number 2
+            // number 3
+            // number 4
+            // number 5
+            itemText = 0;    
+            var listItem = document.createElement('li');
+            listItem.textContent = itemText;
+            list.appendChild(listItem);
+        }
+
+        totalBox.textContent = 'Total: $' + total.toFixed(2);
+    </textarea>
+
+    <div class="playable-buttons">
+        <input id="reset" value="Reset" type="button">
+        <input id="solution" value="Hide solution" type="button">
+    </div>
+
+    <script src="js/main.js"></script>
+</html>
