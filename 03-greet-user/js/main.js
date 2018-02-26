@@ -6,7 +6,8 @@ var myHeading = document.querySelector('h1');
 function setUserName() {
   var myName = prompt('Please enter your name.');
   localStorage.setItem('name', myName);
-  myHeading.innerHTML = 'Welcome, ' + myName;
+  myHeading.innerHTML = '<p>Welcome, ' + myName + '</p>';
+  //myHeading.textContent = '<p>Welcome, ' + myName + '</p>';
 }
 
 if(!localStorage.getItem('name')) {
