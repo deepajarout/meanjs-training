@@ -1,4 +1,8 @@
 // Your JavaScript goes here
+var n = Math.random();
+console.log(n * 100);
+console.log((Math.floor(n * 100)));
+
 var randomNumber = Math.floor(Math.random() * 100) + 1;
 var guesses = document.querySelector('.guesses');
 var lastResult = document.querySelector('.lastResult');
