@@ -1,2 +1,0 @@
-This is a sample file
-we are testing here callbacks and etc
