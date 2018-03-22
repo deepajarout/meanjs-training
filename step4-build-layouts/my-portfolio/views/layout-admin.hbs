@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <!-- header start -->
+    {{> admin/adminHeader}}
+    <!-- header end -->
+
+    <div style="width:25%;float:left;background-color:grey;">
+        <p>This is my sidebar</p>
+        <ul>
+            <li>Blogs</li>
+            <li>Projects</li>
+        </ul>
+    </div>
+    <div style="width:75%;float:left">
+        <!-- body start -->
+        {{{body}}}
+        <!-- body start -->
+    </div>
+    <!-- footer start -->
+    {{> admin/adminFooter}}
+    <!-- footer end -->
+  </body>
+</html>
