@@ -1,10 +1,3 @@
-# ThruSkills MEAN Stack Training 
-
-Hi! Welcome to the MEAN Stack course from ThruSkills.com. This is the training repository for MEAN Stack which includes all the examples and assignments that are part of our training.
-
-**ThruSkills** is an EdTech company in Bangalore. We provide training and courses for students and working professionals to skills them up. We provide video (self pace), online classroom and physical classroom training.  Normally we provide training in high tech and in demand technologies.
-
-
 # What will be covered
 
  - DVCS & Git
@@ -17,16 +10,45 @@ Hi! Welcome to the MEAN Stack course from ThruSkills.com. This is the training r
 
 ## DVCS & Git
 
- - About Version Control
- - Git Basics
- - Git Branching
+ - About Version Control 
+ - Git Basics 
+ - Git Branching 
  - GitHub
 
 ## JavaScript
-
  - Fundamentals Of JavaScript
+	 - History Of JavaScript
+	 - Writing JavaScript Code
+	 - Language Fundamentals
+		 - Statements
+		 - Comments
+		 - Assignment & Equality
+		 - Keywords
+		 - Variables
+		 - Data Types
+		 - Operators
+		 - Control Flow
+		 - Arrays
+	 - How To Think - JavaScript
  - JavaScript Building Blocks
- - Object Oriented JavaScript
- - Client-side APIs
- - Fundamentals Of jQuery
- - JavaScript Mini Project
+	 - Functions
+	 - Objects
+	 - Events
+ - Objects Oriented JavaScript
+    
+
+## NodeJS
+
+ - NodeJS Fundamentals
+ - HTTP Server with Node.js
+ - Advanced Concepts 
+ - Error Handling & Debugging
+ - NodeJS Mini Project
+
+## Express JS
+
+ - Express JS Basics & application generator
+ - Using template engines
+ - Routing & Middleware
+ - Error handling & Debugging
+ - ExpressJS Mini Project
