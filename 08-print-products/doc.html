@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Printing those products - Documentation</title>
+</head>
+
+<body>
+    <h2 id="Active_learning_Printing_those_products!">Active learning: Printing those products!</h2>
+    <p>Let's return to the example we described earlier — printing out product names and prices on an invoice, then totaling
+        the prices and printing them at the bottom. In the editable example below there are comments containing numbers —
+        each of these marks a place where you have to add something to the code. They are as follows:</p>
+    <ol>
+        <li>Below the
+            <code>// number 1</code> comment are a number of strings, each one containing a product name and price separated by a colon. We'd like
+            you to turn this into an array and store it in an array called
+            <code>products</code>.</li>
+        <li>On the same line as the
+            <code>// number 2</code> comment is the beginning of a for loop. In this line we currently have
+            <code>i &lt;= 0</code>, which is a conditional test that causes the
+            for loop to stop immediately, because it is saying "stop when
+            <code>i</code> is no longer less than or equal to 0", and
+            <code>i</code> starts at 0. We'd like you to replace this with a conditional test that stops the loop when
+            <code>i</code> is no longer less than the
+            <code>products</code> array's length.</li>
+        <li>Just below the
+            <code>// number 3</code> comment we want you to write a line of code that splits the current array item (
+            <code>name:price</code>) into two separate items, one containing just the name and one containing just the price. If you are not sure
+            how to do this, consult the Useful string methods article for some help, or even better, look at the
+            Converting between strings and arrays section of this article.</li>
+        <li>As part of the above line of code, you'll also want to convert the price from a string to a number. If you can't
+            remember how to do this, check out the first strings article.</li>
+        <li>There is a variable called
+            <code>total</code> that is created and given a value of 0 at the top of the code. Inside the loop (below
+            <code>// number 4</code>) we want you to add a line that adds the current item price to that total in each iteration of the loop, so
+            that at the end of the code the correct total is printed onto the invoice. You might need an assignment operator to do this.</li>
+        <li>We want you to change the line just below
+            <code>// number 5</code> so that the
+            <code>itemText</code> variable is made equal to "current item name — $current item price", for example "Shoes — $23.99" in each case,
+            so the correct information for each item is printed on the invoice. This is just simple string concatenation,
+            which should be familiar to you.</li>
+    </ol>
+
+    <h2>Live output</h2>
+    <div class="output" style="min-height: 150px;">
+        <ul>
+            <li>Underpants — $6.99</li>
+            <li>Socks — $5.99</li>
+            <li>T-shirt — $14.99</li>
+            <li>Trousers — $31.99</li>
+            <li>Shoes — $23.99</li>
+        </ul>
+        <p>Total: $83.95</p>
+    </div>
+    <h2>Editable code</h2>
+    <p class="a11y-label">Press Esc to move focus away from the code area (Tab inserts a tab character).</p>
+
+    <textarea id="code" class="playable-code" style="height: 410px;width: 95%">
+        var list = document.querySelector('.output ul');
+        var totalBox = document.querySelector('.output p');
+        var total = 0;
+        list.innerHTML = '';
+        totalBox.textContent = '';
+        // number 1
+            'Underpants:6.99'
+            'Socks:5.99'
+            'T-shirt:14.99'
+            'Trousers:31.99'
+            'Shoes:23.99';
+
+        for (var i = 0; i &lt;= 0; i++) { 
+            // number 2
+            // number 3
+            // number 4
+            // number 5
+            itemText = 0;    
+            var listItem = document.createElement('li');
+            listItem.textContent = itemText;
+            list.appendChild(listItem);
+        }
+
+        totalBox.textContent = 'Total: $' + total.toFixed(2);
+    </textarea>
+
+    <div class="playable-buttons">
+        <input id="reset" value="Reset" type="button">
+        <input id="solution" value="Show solution" type="button">
+    </div>
+</body>
+
+</html>

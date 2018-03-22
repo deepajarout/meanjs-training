@@ -1,0 +1,32 @@
+Question 1.
+Can I control if and when MySQL based RDS Instance is upgraded to new supported versions?
+1. No
+2. Yes
+3. Only in VPC
+Answer
+2. Yes
+Question 2.
+In reviewing the Auto Scaling events for your application you notice that your application is scaling up and down multiple times in the same hour. What design choice could you make to optimize for cost while preserving elasticity? Choose 2 answers
+1. Modify the Auto Scaling policy to use scheduled scaling actions
+2. Modify the Auto Scaling group cool-down timers.
+3. Modify the Amazon CloudWatch alarm period that triggers your Auto Scaling scale down policy.
+4. Modify the Auto Scaling group termination policy to terminate the newest instance first.
+5. Modify the Auto Scaling group termination policy to terminate the oldest instance first.
+Answer
+2. Modify the Auto Scaling group cool-down timers.
+3. Modify the Auto Scaling group termination policy to terminate the newest instance first.
+Question 3.
+What does Amazon EC2 provide?
+1. Virtual servers in the Cloud.
+2. Physical servers, remotely managed by the customer.
+3. A platform to run code (Java, PHP, Python), paying on an hourly basis.
+4. Computer Clusters in the Cloud.
+Answer
+1. Virtual servers in the Cloud.
+Question 4.
+You are deploying an application on EC2 that must call AWS APIs. What method of securely passing credentials to the application should you use?
+1. Store API credentials as an object in Amazon Simple Storage Service.
+2. Pass API credentials to the instance using instance userdata.
+3. Use AWS Identity and Access Management roles for EC2 instances.
+4. Embed the API credentials into your JAR files.
+Answer

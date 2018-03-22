@@ -1,0 +1,18 @@
+<form action="/login" method="POST">
+{{#if hasErrors}}
+    {{#each errors}}
+        <p style="background-color: red;color:white; width:50%; padding: 20px;">{{ this.message }}</p>    
+    {{/each}}
+{{/if}}
+<label>UserId</label>
+<br>
+<input name="userid" value="{{data.userid}}" placeholder="User id">
+
+<br>
+<label>Password</label>
+<br>
+<input name="password" type="password" placeholder="Password">
+<br>
+<button>Submit</button>
+
+</form>
