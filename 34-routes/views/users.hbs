@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    {{#each users}}
+        <tr>
+            <td>{{this.id}}.</td>
+            <td><a href="/users/{{this.name}}?pic=true">{{this.name}}</a></td>
+        </tr>
+    {{/each}}
+</table>
+<br><br>
+<a href="/users/create">Add new user</a>
